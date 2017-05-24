@@ -1,0 +1,130 @@
+---
+title: Biological stoichiometry theory explains genotype-dependant mycorrhizal responses in Brachypodium 
+author: ""
+date: ""
+output:
+  word_document:
+    reference_docx: manuscriptstyle_newphyt.docx
+  pdf_document: default
+  html_document:
+    number_sections: yes
+csl: tree-physiology.csl
+bibliography: references2.bib
+---
+
+\
+Rohan C. Riley ^1^, Jeff Powell ^1^
+
+\
+^1^ Hawkesbury Institute for the Environment, Western Sydney University, Locked Bag 1797, Penrith, NSW, Australia
+
+\
+Corresponding author: C.E. Campany, email: courtneycampany@gmail.com, telephone: +61 02 4570 1421, fax: +61 02 4570 1103
+
+Running Head: Below or code chunks to setup your document.  
+
+
+```{sourcing, results="asis", echo=FALSE, warning=FALSE}
+library(knitr)
+opts_knit$set(root.dir = '../')
+```
+
+```{r figyesno, echo=FALSE, message=FALSE, warning=FALSE}
+# Set Flag to include figures in text or not.
+includeFigs <- TRUE
+```
+
+# ```{r, echo=FALSE, warning=FALSE, message=FALSE, results='hide'}
+# 
+# #load packages to run figures scripts and pixiedust for table
+# source("functions and packages/load packages.R")
+# library(pixiedust)
+# 
+# #load table data
+# table1 <- read.csv("master_scripts/pve_table1_new.csv")
+# 
+# ```
+
+```{r, echo=FALSE}
+allomfig <- "4"
+airvarsfig <- "2"
+allocfig <- "3"
+asatfig <- "1"
+achemfig <- "5"
+cuefig <- "6"
+
+pvetab1 <- "1"
+pvetab2 <- "2"
+pvetab3 <- "3"
+
+```
+
+
+#Abstract
+
+Sink limitation is known to reduce plant growth, but it is not known how plant carbon (C) balance is affected, limiting our ability to predict growth under sink-limited conditions. Using ^1^ is superscript.  The above code chunk lets you source R scripts outside of the manuscript folder.
+
+## Keywords {.unnumbered}
+photosynthesis, plant growth, sink regulation, carbon allocation, soil volume
+
+#Introduction
+ This debate over how rates of photosynthesis affect plant growth or to what degree these rates are instead controlled by growth has existed for decades [@sweet1966role; @korner2015paradigm]. This is how you cite papers fom your bibtex.  The @ symbol and keyword are from the bibtex entry.
+ 
+\
+Add a space then then backslash to start a new paragraph.
+
+\
+Like this.
+
+#Materials and Methods
+
+##Experimental design
+A new section starts with 1 hashtag.  A subsection starts with ##. You can format headers/section/subsections in your style.docx.
+
+\
+Leaf gas exchange measurements were performed fortnightly at saturating light (*A*~sat~) and saturating light and [CO~2~] (*A*~max~) on new fully expanded leaves.  Using *word* is italics.  Using ~small~ is subscript.  Using **word** is bold.
+
+
+\
+Often in your paper (mostly results) you may have some symbols that are not readily available. For this you will have to use latex tags.  Google is your friend and these are super easy to find.  Greek letters $\delta$^13^C.  Degrees 40&degC. Here is an example of units TNC-free specific leaf area (SLA~f~, m^2^ kg^-1^).
+
+##Equation example
+The daily net C gain of seedlings (*G*), from @makela1997carbon.  For an inline citation just remove the []. Use double dollar signs to start and end equations.  THe equations are in latex formats.
+
+\
+(Eqn 1)
+$$G(t) = L(P~\sigma - R)$$
+
+#Results
+
+##Growth and morphology
+Plant height, diameter and leaf area diverged between container volumes soon after start of the experiment (Figure `r allomfig`). Here you could just say (Figure 1.).  But I have a naming system for when edits are changed and Figures/Tables are put in different orders.
+
+
+First to diverge was seedling leaf area, which significantly differed among soil volumes (*P* < 0.029) from the 5^th^ week of the experiment. 
+
+
+# Tables {.unnumbered}
+**Table 1**. Responses of plant characteristics of *Eucalyptus tereticornis* seedlings to soil volume treatments, including modelled cumulative net leaf carbon gain.  I use a package call pixiedust for tables. dust makes table from a dataframe, here table1.  YOu will need to load your table dataframes.  sprinkle_colnames sets up your column headers. sprinkles are your table options.  Here I have bolded the table headers. 
+
+```{r table1, echo=FALSE, warning=FALSE}
+dust(table1)%>%
+  sprinkle_colnames("Volume (L)", 
+                    "Seedling mass (g)", 
+                    "SLA~f~ (m^2^ kg^-1^)",
+                    "SRL (m g^-1^)",
+                    "FRLD (m dm^-3^)",
+                    "Total Net C Gain (g)") %>%
+  sprinkle(rows= 1, part="head",bold=TRUE)%>%
+  sprinkle_print_method("markdown")
+```
+
+
+# Figures {.unnumbered}
+
+```{r figure1, fig.width=6, fig.height=7.8, echo=FALSE,  dev="png", dpi=600,eval=includeFigs}
+source("master_scripts/allometryplotting.R")
+```  
+**Figure 1**. Seedling growth over the duration of the experiment was strongly reduced in containerized seedlings compared to freely rooted seedlings. For figures I like to source the script that **only** makes the figure.  THen the output is placed here. THere are several options for figure sizes and quality and type that you can adjust as needed.
+
+
