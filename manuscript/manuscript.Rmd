@@ -4,7 +4,7 @@ author: ""
 date: ""
 output:
   word_document:
-  reference_doc: test2.docx
+  reference_docx: manuscriptstyle.docx
   number_sections: yes
 csl: environmental-research-letters.csl
 bibliography: mistletoe.bib
@@ -26,7 +26,7 @@ Running Head: Mistletoe, Friend and Foe
 
 ```{sourcing, results="asis", echo=FALSE, warning=FALSE}
 library(knitr)
-opts_knit$set(root.dir = '../')
+opts_knit$set(root.dir = '..\')
 ```
 
  
@@ -55,15 +55,19 @@ mistletoe, biodiversity, mortality, climate change, ecosystem processes
 
 ## Background
 Forests ecosystems have large economical values, as they contain 80% of aboveground carbon and 40% of belowground global carbon stocks [@IPCC_LandUse2000] along with the capacity of storing carbon over centuries.
-Disturbances have the potential to alter ecosystem processes and functioning, yet they are part of the natural cycle of any ecosystem [@Kulakowski2017]. Climatic induced disturbances, such as heatwaves and droughts, can significantly lower carbon sequestration rates [@Yuan2016; @Yi2015; @Reichstein2013] and cause wide-ranging tree mortality [@Kara2017]. Similarly detrimental effects  were reported from cyclones and an increase in wildfires as the climate changes [@Hutley2013; @Schoennagel2017]. Climate change and climate induced disturbances can weaken ecosystem resilience and alter the occurrence and life-cycle of biotic disturbances such as pest and insect outbreaks[@Dukes2009; @Johnson2010], the most prominent being the bark beetle outbreaks that affected vast areas across the central and western United States. However, while the latter caused a substantial increase in stand mortality (almost 80%), atmospheric carbon sequestration rates remained unchanged [@Reed2014], indicating potential for a substantial mis-match between changes in stand dynamics and carbon cycling.  
+Disturbances have the potential to alter ecosystem processes and functioning, yet they are part of the natural cycle of any ecosystem [@Kulakowski2017]. Climatic induced disturbances, such as heatwaves and droughts, can significantly lower carbon sequestration rates [@Yuan2016; @Yi2015; @Reichstein2013] and cause wide-ranging tree mortality [@Kara2017]. Similarly detrimental effects  were reported from cyclones and an increase in wildfires as the climate changes [@Hutley2013; @Schoennagel2017]. Climate change and climate induced disturbances can weaken ecosystem resilience and alter the occurrence and life-cycle of biotic disturbances such as pest and insect outbreaks[@Dukes2009; @Johnson2010; @Allen2010], the most prominent being the bark beetle outbreaks that affected vast areas across the central and western United States. However, while the latter caused a substantial increase in stand mortality (almost 80%), atmospheric carbon sequestration rates remained unchanged [@Reed2014], indicating potential for a substantial mis-match between changes in stand dynamics and carbon cycling.  
 
 \
-While insect attacks and large-scale disturbances like cyclones and wildfires often cause wide-spread stand mortality, the presence of parasitic plants is typically less obvious as they are slower and more sublte in affecting ecosystem processes and stand dynamics. And unlike cyclones and wildfires, which are concentrating in lower latitudes and not necessarily a threat in every climate region, parasitic plants are globally distributed and an itegral component of most ecosystems. The relationship between the parasite and the host is often symbiotic, e.g. epiphytic parasites rely on the structural support of a host plant and in return enrich nutrients and will cease as well with the death of the host. 
-Among the most widespread parasitic plants are mistletoes, which are hemiparasites that portrait epiphytic behaviour and belong to the order of Santalales. Mistletoes have been studied across a large range of ecosystems, and the process of host infection can be considered similar for all mistletoes [@mathiasen2008]: the mistletoe attaches to a branch and taps into the xlem of the host tree. Although they are capable of photosynthesizing and producing basic sugars [@Lamont1983], they maintain lower xlem water potentials to absorb water and nutrients from the host. However, this is typically not damaging the host instantly, as mistletoes are longlived (exceeding 30 years) and thus requires to live in symbiosis with the host.climate change will change that.
+While insect attacks and large-scale disturbances like cyclones and wildfires often cause wide-spread stand mortality, the presence of parasitic plants is typically less obvious as they are slower and more sublte in affecting ecosystem processes and stand dynamics. And unlike cyclones and wildfires, which are concentrating in lower latitudes and not necessarily a threat in every climate region, parasitic plants are globally distributed and an itegral component of most ecosystems. The relationship between the parasite and the host is often symbiotic, e.g. vasucluar epiphytes rely on the structural support of a host plant and in return enhance nutrient cycling by fertilizing nutrient-enriched litter to the soil [@Bartels2012; @March2010].
+Among the most widespread parasitic plants are mistletoes, which are hemiparasites that portrait epiphytic behaviour and belong to the order of Santalales. Mistletoes have been studied across a large range of ecosystems, and the process of host infection can be considered similar for all mistletoes [@mathiasen2008]: the mistletoe attaches to a branch and taps into the xlem of the host tree. Although they are capable of photosynthesizing and producing basic sugars [@Lamont1983], they maintain lower xlem water potentials to absorb water and nutrients from the host. However, it can take decades to notice their damaging effect on the host, as mistletoes are longlived (exceeding 30 years) and their existence will cease with the death of the host.
 
-Recent studies indicated an increase in mistletoe abundance within existing distributions [@RN132; @RN2503; ].
+Figure 1 conceptualizes the temporal dynamics of the parasitic life cycle on tree physiology, the cycling of water, energy, carbon and nutrients, and ultimately the impact on floral and faunal diversity. 
 
-![Figure 1. Mistletoe time dynamics.](Figure1.png)
+![Figure 1. Conceptual figure indicating the temporal dynamics of mistletoe infection from the branch to the ecosystem level with a focus on tree phsysiology, matter and energy fluxes, and floral and faunal diversity.](..\output\Figure1.png)
+
+Recent studies in Australia indicated an increase in mistletoe abundance within existing distributions [@Bowen2009; @Turner2016], which had been associated with a decrease in tree growth and survival rates [@Reid1994] that was especially detrimental in young trees [@Carnegie2009].
+
+
 
 
 # Advancements in monitoring and management 
