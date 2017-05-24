@@ -4,9 +4,9 @@ author: ""
 date: ""
 output:
   word_document:
-  reference_docx: manuscriptstyle.docx
+  reference_doc: test2.docx
   number_sections: yes
-csl: tree-physiology.csl
+csl: environmental-research-letters.csl
 bibliography: mistletoe.bib
 ---
 
